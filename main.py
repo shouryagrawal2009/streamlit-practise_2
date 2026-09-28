@@ -19,7 +19,18 @@ h1 {color: Aqua;}
   font-size: 50px;
   font-weight: bold;
 }
-[class*="st-key-"][class*="_inc"] button {}
+[class*="st-key-"][class*="_inc"] button {
+  width: 36px;
+  height: 36px;
+  min-height: 36px;
+  border-radius: 50%;
+  padding: 0;
+  border: 2px solid black;
+  background: white;
+  font-size: 50px;
+  font-weight: bold;
+  right:50px;
+}
 </style>
 """, unsafe_allow_html=True)
 
