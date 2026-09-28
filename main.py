@@ -8,8 +8,7 @@ st.markdown("""
 <style>
 h1 {color: Aqua;}
 .stApp {background-color: #f8f9fa;}
-[class*="st-key-"][class*="_dec"] button,
-[class*="st-key-"][class*="_inc"] button {
+[class*="st-key-"][class*="_dec"] button {
   width: 36px;
   height: 36px;
   min-height: 36px;
@@ -19,6 +18,8 @@ h1 {color: Aqua;}
   background: white;
   font-size: 50px;
   font-weight: bold;
+}
+[class*="st-key-"][class*="_inc"] button {}
 </style>
 """, unsafe_allow_html=True)
 
