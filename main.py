@@ -29,7 +29,7 @@ h1 {color: Aqua;}
   background: white;
   font-size: 50px;
   font-weight: bold;
-  right:50px;
+  right:100px;
 }
 </style>
 """, unsafe_allow_html=True)
