@@ -32,6 +32,18 @@ h1 {color: Aqua;}
   font-weight: bold;
   right:100px;
 }
+
+[class*="st-key-"][class*="_inc"],
+[class*="st-key-"][class*="_inc"] .stButton {
+  display:flex;
+  jutify-content: flex-end;
+}
+
+[class*="st-key-"][class*="_dec"],
+[class*="st-key-"][class*="_dec"] .stButton {
+  display: flex;
+  justify-content:  flex-start;
+}
 </style>
 """, unsafe_allow_html=True)
 
