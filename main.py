@@ -18,7 +18,7 @@ h1 {color: Aqua;}
   background: white;
   font-size: 50px;
   font-weight: bold;
-  line-height:1;
+  line-height:10;
 }
 [class*="st-key-"][class*="_inc"] button {
   width: 36px;
