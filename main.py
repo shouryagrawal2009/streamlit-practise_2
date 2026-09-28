@@ -9,8 +9,8 @@ st.markdown("""
 h1 {color: Aqua;}
 .stApp {background-color: #f8f9fa;}
 [class*="st-key-"][class*="_dec"] button {
-  width: 36px;
-  height: 36px;
+  width: 50px;
+  height: 50px;
   min-height: 36px;
   border-radius: 50%;
   padding: 0;
