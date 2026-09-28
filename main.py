@@ -23,11 +23,11 @@ X= u*t + 0.5*a*t**2
 
 fig= go.Figure(go.Scatter(x=t, y=v, mode="lines"))
 fig.update_layout(title="Velocity vs Time", xaxis_title="Time(s)",yaxis_title="Velocity (m/s)", template="plotly_white")
-fig.update_trace(line_color="#3B5BDB", line_width=3)
+fig.update_traces(line_color="#3B5BDB", line_width=3)
 
 fig2= go.Figure(go.Scatter(x=t, y=X, mode="lines"))
 fig2.update_layout(title="Position vs Time", xaxis_title="Time(s)",yaxis_title="Position(m)", template="plotly_white")
-fig2.update_trace(line_color="#E8590C", line_width=3)
+fig2.update_traces(line_color="#E8590C", line_width=3)
 
 tab1, tab2 = st.tabs(["Velocity-Time", "Position-Time"])
 with tab1:
