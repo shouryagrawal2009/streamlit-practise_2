@@ -11,11 +11,26 @@ h1 {color: Aqua;}
 </style>
 """, unsafe_allow_html=True)
 
+def stepper(label, min_v, max_v, default, key):
+  if key not in st.session_state:
+    st.session_state[key]= default
+  def dec():
+    st.session_state[key] = max(min_v, st.session_state[key] - 1)
+  def inc():
+    st.session_state[key]=  min(max_v, st.session_state[key] +1)
+
+  st.sidebar.write(label)
+  c1, c2, c3= st.sidebar.columns([1,4,1])
+  c1.button("-", key=key + "_dec", on_click=dec)
+  c2.button("+", key=key + "_inc", on_click=inc)
+  return c2.slider(label, min_v, max_v, key=key, label_visibility="collapsed")
+  
+
 st.title("Kinematics Visualizer")
 
-u=st.sidebar.slider("Initial velocity (m/s)",0,50, 20)
-a=st.sidebar.slider("Acceleartion (m/s2)",0, 20, 10)
-T= st.sidebar.slider("Total time (s)", 1, 30, 10)
+u=stepper("Initial velocity (m/s)",0,50, 20,"u")
+a=stepper("Acceleartion (m/s2)",0, 20, 10,"a")
+T=stepper("Total time (s)", 1, 30, 10,"T")
 
 t= np.linspace(0, T, 200)
 v= u+ a*t
