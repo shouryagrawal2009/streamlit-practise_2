@@ -10,7 +10,7 @@ h1 {color: Aqua;}
 .stApp {background-color: #f8f9fa;}
 [class*="st-key-"][class*="_dec"] button,
 [class*="st-key-"][class*="_inc"] button {
-  width: 36px
+  width: 36px;
   height: 36px;
   min-height: 36px;
   border-radius: 50%;
