@@ -34,15 +34,15 @@ h1 {color: Aqua;}
 }
 
 [class*="st-key-"][class*="_inc"],
-[class*="st-key-"][class*="_inc"] .stButton {
+[class*="st-key-"][class*="_inc"] .stButton button {
   display:flex;
-  jutify-content: flex-end;
+  jutify-content: flex-end !important;
 }
 
 [class*="st-key-"][class*="_dec"],
-[class*="st-key-"][class*="_dec"] .stButton {
+[class*="st-key-"][class*="_dec"] .stButton button {
   display: flex;
-  justify-content:  flex-start;
+  justify-content:  flex-start !important;
 }
 </style>
 """, unsafe_allow_html=True)
