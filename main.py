@@ -17,7 +17,7 @@ h1 {color: Aqua;}
   padding: 0;
   border: 2px solid black;
   background: white;
-  font-size: 20px;
+  font-size: 50px;
   font-weight: bold;
 </style>
 """, unsafe_allow_html=True)
